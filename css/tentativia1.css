@@ -1,0 +1,902 @@
+body {
+    margin: 0;
+    font-family: "Mulish";
+    padding-top: 70px;
+}
+
+.container{
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 15px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+ }
+
+ header{
+    z-index: 1;
+    background-color: darkgreen;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .logo .white-dot{
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    display: inline-block;
+}
+
+header nav {
+    display: inline-block;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.37px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+} 
+
+header nav ul li.menu-icon {
+    display: none;
+}
+
+header nav ul li:hover{
+    font-weight: bold;
+}
+
+
+
+header nav ul li.uk-icon img{
+    display: block;
+    margin: auto;
+    width: 23px;
+    height: auto;
+}
+
+header nav ul li.uk-icon:hover{
+    font-weight: bold;
+
+}
+
+section.hero{
+    position: relative;
+}
+
+section.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.hero-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-content h1{
+    max-width: 495px;
+    color: black;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    line-height: 60px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.hero-content button{
+    height: 50px;
+    max-width: 100%;
+    width: 220px;
+    background-color: white;
+    border-radius: 15px;
+    color: darkgreen;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.hero-content button:hover{
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+
+section.courses-selection {
+    padding-top: 80px;
+}
+
+section.courses-selection h2{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin: 0 0 14px 0;
+}
+
+section.courses-selection .courses-slider{
+    margin-top: 76px;
+ }
+
+ section.courses-selection .container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+ }
+
+
+ section.courses-selection .courses-slider .course{
+    border-radius: 8px;
+    border: 1px solid darkgreen;
+    width: 33%;
+    text-align: center;
+    margin: 5px 8px;
+    padding: 50px;
+    position: relative;
+ }
+
+ section.courses-selection .courses-slider .course-img{
+   max-width: 100%;
+ }
+
+ section.courses-selection .courses-slider .course .course-info{
+    max-width: 100%;
+}
+
+section.courses-selection .courses-slider .course .course-info .duration{
+    max-width: 100%;
+    color:  rgb(128, 128, 128);
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    margin-top: 0;
+} 
+
+section.courses-selection .courses-slider .course .course-info .title{
+    color: darkgreen;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    margin-top: 0;
+} 
+
+section.courses-selection .courses-slider .course .course-info button{
+    width: 220px; 
+    height: 44px;
+    border-radius: 25px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: white;
+    background-color: darkgreen;
+    text-align: center;
+    cursor: pointer;
+}
+
+section.courses-selection .courses-slider .course .course-info button:hover{
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    background-color:white;
+}
+
+section.login{
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 4px;
+    color:  darkgreen;
+    max-width: 50%;
+    position: relative;
+    padding: 72px 0;
+    margin: 80px auto;
+    border: 1px solid darkgreen;
+}
+
+section.login h3 {
+    position: absolute; 
+    top: 0; 
+    left: 25px; 
+}
+
+section.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.login form input{
+    max-width: 75%;
+    width: 330px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid  darkgreen;
+    color: darkgreen;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    padding-left: 8px;
+    margin-bottom: 40px;
+}
+
+section.login form button{
+    width: 120px; 
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: white;
+    background-color: darkgreen;
+    text-align: center;
+}
+
+section.login form p.sing-up{
+    text-align: center;
+    margin: 15px;
+    font-size: 13px;
+}
+
+section.login form button:hover{
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    background-color:  white;
+    cursor: pointer;
+}
+
+section.login form p.sing-up:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: darkgreen;
+    color: white;
+    padding: 20px 10px 10px 10px;
+}
+
+footer .bottom-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .bottom-nav .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 955px;
+    max-width: 955px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .bottom-nav .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    line-height: 50px;
+    display: inline-block;   
+}
+
+footer .logo .white-dot{
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+
+footer .contact-info #space-bottom{
+    margin-bottom: 40px;
+}
+
+footer .contact-info img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+    margin-right: 5px;;
+}
+
+footer .media-icons{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+footer .media-icons img{
+    width: 29px;
+    height: 29px;
+    margin: 20px 8px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+footer .media-icons img:hover{
+    cursor: pointer;
+}
+
+
+
+footer .copyright-text{
+    color: darkgreen;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 22px;  
+    margin-bottom: 0;
+ }
+
+/*==============================
+        CSS MEDIA QUERRIES
+===============================*/
+
+/*Start of Desing for Small Desktop*/
+@media screen and (max-width: 1440px){
+    .container {
+       width: 1180px;
+    }
+ 
+   body {
+       padding-top: 70px;
+    }
+ 
+   header {
+       height: 70px;
+    }
+ 
+   .hero-content h1 {
+       font-size: 40px;
+       max-width: 40%;
+       letter-spacing: 1.1px;
+       line-height: 50px;
+       margin-bottom: 12px;
+    }
+
+    .hero-content button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+        
+    }
+
+    section.courses-selection {
+        padding-top: 70px;
+    }
+    
+    section.courses-selection h2{
+        font-size: 38px;
+        margin: 0 0 16px 0;
+    }
+    
+    section.courses-selection .courses-slider{
+        margin-top: 70px;
+     }
+    
+     section.courses-selection .container{
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+
+    
+    section.courses-selection .courses-slider .course .course-info .duration{
+        font-size: 13px;
+        letter-spacing: 0.31px;
+        line-height: 44px;
+        margin-bottom: 7px;
+        margin-top: 0;
+    } 
+    
+    section.courses-selection .courses-slider .course .course-info .title{
+        font-size: 23px;
+        letter-spacing: 0.4px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    } 
+    
+    section.courses-selection .courses-slider .course .course-info button{
+        width: 180px; 
+        height: 41px;
+        line-height: 21px;
+        letter-spacing: 0.35px;
+    }
+
+    section.login form p.sing-up{
+        margin: 13px;
+        font-size: 11px;
+    }
+    
+    section.login{
+        padding: 62px 0;
+        margin: 70px auto;
+    }
+    
+    section.login h3 {
+        font-size: 22px;
+        letter-spacing: 0.55px;
+        line-height: 42px;
+    }
+    
+    section.login form input{
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+    
+    section.login form button{
+        font-size: 12px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+    }
+    
+    footer{
+        padding: 18px 8px 10px 10px;
+    }
+    
+    footer .bottom-nav .container{
+        max-width: 90%;
+    }
+    
+    footer .bottom-nav .logo{
+        color: white;
+        font-size: 42px;
+        line-height: 46px;
+    }
+    
+    footer .logo .white-dot{
+        width: 6px;
+        height: 6px;
+    }
+    
+    footer .contact-info {
+        font-size: 19px;
+        line-height: 22px;
+        margin-bottom: 65px;
+    }
+    
+    footer .contact-info #space-bottom{
+        margin-bottom: 35px;
+    }
+    
+    footer .contact-info img{
+        width: 21px;
+        height: 21px;
+        margin: 0 8px;
+        margin-right: 4.5px;;
+    }
+    
+    footer .media-icons{
+        font-size: 19px;
+        line-height: 22px;
+    }
+    
+    footer .media-icons img{
+        width: 25px;
+        height: 25px;
+        margin: 18px 7px;
+        margin-right: 5px;
+    }
+    
+    footer .copyright-text{
+        height: 50px;
+        font-size: 17px;
+        letter-spacing: 0.35px;
+        line-height: 22px;
+        text-align: center;
+     }
+}
+/*End of Desing for Small Desktop*/
+
+/**Start of Desing for Tablet**/
+@media screen and (max-width: 960px){
+    .container {
+       width: 92%;
+    }
+ 
+   body {
+       padding-top: 70px;
+    }
+ 
+    header .logo {
+        font-size: 24px;
+    }
+  
+    header nav ul li {
+        display: none;
+    }
+    
+    header nav ul li.menu-icon {
+        display: inline-block;
+    }
+
+    header nav ul li.menu-icon img{
+        width: 30px;
+        height: auto;
+        vertical-align: middle;
+     }
+ 
+   .hero-content h1 {
+        max-width: 40%;
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content button {
+        font-size: 12px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+        width: 140px;
+        margin-bottom: 15px;
+    }
+
+    section.login form p.sing-up{
+        margin: 11px;
+        font-size: 9px;
+    }
+
+    section.courses-selection {
+        padding-top: 60px;
+    }
+    
+    section.courses-selection h2{
+        font-size: 34px;
+        margin: 0 0 14px 0;
+    }
+    
+    section.courses-selection .courses-slider{
+        margin-top: 60px;
+     }
+
+     section.courses-selection .courses-slider .course{
+        min-width: 220px;
+      margin: 17px 8px;
+    }
+    
+    section.courses-selection .courses-slider .course .course-info .duration{
+        font-size: 11px;
+        letter-spacing: 0.27px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    } 
+    
+    section.courses-selection .courses-slider .course .course-info .title{
+        font-size: 20px;
+        letter-spacing: 0.35px;
+        line-height: 19px;
+        margin-bottom: 4.5px;
+    } 
+    
+    section.courses-selection .courses-slider .course .course-info button{
+        width: 170px; 
+        height: 38px;
+        line-height: 18px;
+        letter-spacing: 0.30px;
+    }
+    
+    section.login{
+        padding: 50px 0;
+        margin:50px auto;
+    }
+    
+    section.login h3 {
+        margin: auto;
+        font-size: 19px;
+        letter-spacing: 0.50px;
+        line-height: 40px;
+    }
+    
+    section.login form input{
+        font-size: 10px;
+        letter-spacing: 0.25px;
+        line-height: 16px;
+    }
+    
+    section.login form button{
+        font-size: 10px;
+        letter-spacing: 0.30px;
+        line-height: 18px;
+    }
+    
+    footer{
+        padding: 16px 6px 8px 8px;
+    }
+    
+    footer .bottom-nav .container{
+        max-width: 90%;
+    }
+    
+    footer .bottom-nav .logo{
+        font-size: 30px;
+        line-height: 42px;
+    }
+    
+    footer .logo .white-dot{
+        width: 5px;
+        height: 5px;
+    }
+    
+    footer .contact-info {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 60px;
+    }
+    
+    footer .contact-info #space-bottom{
+        margin-bottom: 30px;
+    }
+    
+    footer .contact-info img{
+        width: 18px;
+        height: 18px;
+        margin: 0 7px;
+        margin-right: 4px;;
+    }
+    
+    footer .media-icons{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    footer .media-icons img{
+        width: 22px;
+        height: 22px;
+        margin: 16px 5px;
+        margin-right: 4.5px;
+    }
+    
+    footer .copyright-text{
+        height: 40px;
+        font-size: 14px;
+        letter-spacing: 0.30px;
+        line-height: 20px;
+     }
+}
+/*End of Desing for Tablet*/
+
+/*Start of Desing for Mobile*/
+@media screen and (max-width: 576px){
+    header .logo {
+        font-size: 18px;
+    }
+  
+    header .logo .white-dot{
+        width: 5px;
+        height: 5px;
+    }
+ 
+   .hero-content h1 {
+        max-width: 40%;
+        font-size: 20px;
+        letter-spacing: 0.8px;
+        line-height: 30px;
+        margin-bottom: 9px;
+    }
+
+    .hero-content button {
+        font-size: 10px;
+        letter-spacing: 0.30px;
+        line-height: 19px;
+        width: 110px;
+        margin-bottom: 15px;
+    }
+
+    section.courses-selection {
+        padding-top: 56px;
+    }
+    
+    section.courses-selection h2{
+        font-size: 30px;
+        margin: 0 0 12px 0;
+    }
+    
+    section.courses-selection .courses-slider{
+        margin-top: 50px;
+     }
+
+     section.courses-selection .courses-slider .course{
+        min-width: 190px;
+        margin: 15px 6px;
+    }
+    
+    section.courses-selection .courses-slider .course .course-info .duration{
+        font-size: 9px;
+        letter-spacing: 0.23px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    } 
+    
+    section.courses-selection .courses-slider .course .course-info .title{
+        font-size: 20px;
+        letter-spacing: 0.35px;
+        line-height: 19px;
+        margin-bottom: 4.5px;
+    } 
+    
+    section.courses-selection .courses-slider .course .course-info button{
+        width: 150px; 
+        height: 34px;
+        line-height: 15px;
+        letter-spacing: 0.24px;
+    }
+    
+    section.login{
+        padding: 40px 0;
+        margin: 40px auto;
+    }
+    
+    section.login h3 {
+        font-size: 17px;
+        letter-spacing: 0.40px;
+        line-height: 36px;
+    }
+    
+    section.login form input{
+        font-size: 9px;
+        letter-spacing: 0.20px;
+        line-height: 13px;
+    }
+    
+    section.login form button{
+        font-size: 8px;
+        letter-spacing: 0.25px;
+        line-height: 15px;
+    }
+    
+    section.login{
+        padding: 50px 0;
+        margin:50px auto;
+    }
+    
+    section.login h3 {
+        margin: auto;
+        font-size: 19px;
+        letter-spacing: 0.50px;
+        line-height: 40px;
+    }
+    
+    section.login form input{
+        font-size: 10px;
+        letter-spacing: 0.25px;
+        line-height: 16px;
+    }
+    
+    section.login form button{
+        font-size: 10px;
+        letter-spacing: 0.30px;
+        line-height: 18px;
+    }
+
+    section.login form p.sing-up{
+        margin: 9px;
+        font-size: 7px;
+    }
+    
+    footer{
+        padding: 14px 4px 6px 6px;
+    }
+    
+    footer .bottom-nav .container{
+        max-width: 88%;
+    }
+    
+    footer .bottom-nav .logo{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    footer .logo .white-dot{
+        width: 4.5px;
+        height: 4.5px;
+    }
+    
+    footer .contact-info {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 50px;
+    }
+    
+    footer .contact-info #space-bottom{
+        margin-bottom: 20px;
+    }
+    
+    footer .contact-info img{
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+        margin-right: 3.5px;
+    }
+    
+    footer .media-icons{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    footer .media-icons img{
+        width: 20px;
+        height: 20px;
+        margin: 14px 4px;
+        margin-right: 4px;
+    }
+    
+    footer .copyright-text{
+        height: 36px;
+        font-size: 12px;
+        letter-spacing: 0.25px;
+        line-height: 18px;
+     }
+}
+/*End of Desing for Mobile*/
